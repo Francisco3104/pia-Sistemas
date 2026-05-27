@@ -23,7 +23,7 @@ async function obtenerClima(ciudad){
     try{
 
         const url =
-        'https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric&lang=es';
+        `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric&lang=es`;
 
         const respuesta = await fetch(url);
 
@@ -77,6 +77,9 @@ function mostrarClima(data){
 
  document.getElementById("iconoClima").src=
  `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+
+    document.getElementById("clima").textContent =
+        data.weather[0].description;
 }
 
 

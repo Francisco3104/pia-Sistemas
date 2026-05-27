@@ -3,63 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS</title>
-   <link rel="stylesheet" href="estilos.css">
+    <title>App del clima</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <div id="fondo">
         <div id="container">
-            <h1 id="cabeza">Weather App</h1>
+            <h1 id="cabeza">App del clima</h1>
             <div id="buscar">
                 <input type="text" placeholder="Enter city name..." id="busqueda">
-                <button id="lupita">Buscar</button>
+                <button id="lupita"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
             <ul id="sugerencias"></ul>
             <div id="weatherDisplay">
-
-             <div id="weatherCard" style="display:none;">
-
-                <h2 id="nombreCiudad"></h2>
-                <p><span id="temp"></span></p>
-
-                <div id="iconoContainer">
-                    <img id="iconoClima">
-                </div>
-                
-                <p>Clima: <span id="clima"></span></p>
-                <div id="containerGrid">
-
-                    <div class="climaCard">
-                        <p>
-                            <i class="fa-solid fa-wind"></i>
-                            Viento:</p> 
+                <div id="weatherCard" style="display:none;">
+                    <h2 id="nombreCiudad"></h2>
+                    <p><span id="temp"></span></p>
+                    <div id="iconoContainer">
+                        <img id="iconoClima">
+                    </div>
+                    <p><span id="clima"></span></p>
+                    <div id="containerGrid">
+                        <div class="climaCard">
+                            <p><i class="fa-solid fa-wind"></i> Viento</p>
                             <span id="viento"></span>
-                    </div>
-
-                    <div class="climaCard">
-                        <p>
-                            <i class="fa-solid fa-droplet"></i>
-                            Humedad:</p> 
+                        </div>
+                        <div class="climaCard">
+                            <p><i class="fa-solid fa-droplet"></i> Humedad</p>
                             <span id="humedad"></span>
-                    </div>
-
-                    <div class="climaCard">
-                        <p>
-                            <i class="fa-solid fa-gauge"></i>
-                            Presión:</p> 
+                        </div>
+                        <div class="climaCard">
+                            <p><i class="fa-solid fa-gauge"></i> Presión</p>
                             <span id="presion"></span>
-                    </div>
-
-                    <div class="climaCard">
-                        <p>
-                            <i class="fa-regular fa-eye"></i>
-                            Visibilidad:</p> 
+                        </div>
+                        <div class="climaCard">
+                            <p><i class="fa-regular fa-eye"></i> Visibilidad</p>
                             <span id="visibilidad"></span>
+                        </div>
                     </div>
-
                 </div>
-            </div>
-
                 <p style="color: white;" id="mensajeClima">Search for a city to see the weather</p>
             </div>
         </div>

@@ -10,9 +10,6 @@ route:
 
 receivers:
   - name: "webhook-default"
-    webhook_configs:
-      - url: "http://localhost:5001/alerts"
-        send_resolved: true
 
 inhibit_rules:
   - source_match:
